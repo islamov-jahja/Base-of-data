@@ -2,7 +2,9 @@ SELECT * FROM `computer`;
 
 -- 1.
 INSERT INTO `computer`
-VALUES (NULL, "ASUS", 5, 85000);
+VALUES (NULL, "ASUS", 5, 85000),
+  (NULL, "ZenSUS", 5, 86000);
+
 
 INSERT INTO `computer`
   (name, price, color)
