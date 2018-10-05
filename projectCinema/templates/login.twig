@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="../templates/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+      <title>Сinema site</title>
+   </head>
+   <body>
+      <div class="main_container">
+         <div class="name">
+            <h1 align="center">Авторизация</h1>
+            <div class="clear"></div>
+         </div>
+         <div class="interests2">
+            <div class="batton">
+               <a href="signup_client.php" class="button1">Регистрация</a>
+            </div>
+         </div>
+         <form class="input" name="form" method="post" action="#">
+            <div class="wrapper">
+               <label for="Login">Логин</label><input type="textarea" placeholder="Логин" name="login" id="Login" required><span></span><br>
+               <label for="Pas">Пароль</label><input type="password" name="password2" id="pas" placeholder="Пароль" id="Pas" required><span></span><br>
+               <p style="color:red">{{ error }}</p>
+               <div class="button">
+                  <button name="do_login" type="submit">Войти</button><br><br><br>
+               </div>
+            </div>
+         </form>
+         <br><br><br><br><br><br><br><br><br>
+         <div class="clear"></div>
+         <div class="my_contact">
+            <h4>© 2018 "Название сайта", Inc</h4>
+            <a href=""><img class="contacts" src="../templates/image/vk.png" alt="vk"></a>
+            <a href=""><img class="contacts" src="../templates/image/vi.jpg" alt="vi"></a>
+            <a href=""><img class="contacts" src="../templates/image/inst.jpg" alt="inst"></a>
+			<br></br><br></br>
+         </div>
+      </div>
+   </body>
+</html>

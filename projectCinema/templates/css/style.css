@@ -1,0 +1,306 @@
+		* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.main_container {
+		margin: 0 auto;
+		background-image: url('../image/bg.jpg');
+		background-size: cover;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.interests1 {
+		float: left;
+		width: 220px;
+	}
+	
+	.interests1_search_form {
+		margin-top: 10px;
+	}
+	
+	.interests2 {
+		text-align: center;
+		display: block;
+		float: right;
+		width: 220px;
+	}
+	
+	.button1 {
+		display: inline-block;
+		color: white;
+		font-weight: 700;
+		text-decoration: none;
+		padding: .5em 2em;
+		outline: none;
+		border: 2px solid;
+		border-radius: 1px;
+		transition: 0.2s;
+	}
+	
+	.film_blocks {
+		width: 1328px;
+		margin: auto;
+	}
+	
+	.name {
+		color: #DCDCDC;
+		margin: 0 auto;
+		width: 900px;
+	}
+	
+	ol,
+	ul {
+		margin: 12px;
+		padding: 20px;
+	}
+	
+	.film_container {
+		color: #DCDCDC;
+		margin-top: 40px;
+		border-top: 5px solid #000;
+		border-bottom: 5px solid #000;
+	}
+	
+	.add_container {
+		color: #DCDCDC;
+		margin-top: 40px;
+		border-top: 5px solid #000;
+		border-bottom: 5px solid #000;
+	}
+	
+	.film {
+		width: 225px;
+		height: 300px;
+	}
+	
+	.about_film {
+		color: #DCDCDC;
+		float: left;
+		width: 300px;
+		min-height: 500px;
+		text-align: center;
+		margin: 5px;
+		border: 1px solid #000;
+		border-radius: 5px;
+		padding: 5px;
+		text-shadow: black 0px 0px 0px;
+	}
+	
+	.about_film p {
+		font-family: 'passion one', cursive;
+		font-size: 17px;
+	}
+	
+	.about_film img {
+		border: 1px solid #000;
+		border-radius: 10px;
+	}
+	
+	img {
+		margin: 10px;
+	}
+	
+	.contacts {
+		margin: 3px;
+		width: 35px;
+		height: 35px;
+	}
+	
+	h1 {
+		text-align: center;
+	}
+	
+	.clear {
+		clear: both;
+	}
+	
+	.my_contact {
+		text-align: center;
+		margin: 15px;
+		font-size: 16px;
+	}
+	
+	.my_contact img {
+		border-radius: 10px;
+	}
+	/* РЕГИСТРАЦИЯ */
+	
+	.input {
+		width: 50%;
+		margin: 40px auto;
+		padding: 0;
+	}
+	
+	.wrapper {
+		color: #DCDCDC;
+		text-align: left;
+		width: 100%;
+		min-width: 200px;
+		margin-bottom: 20px;
+		padding: 25px 25px 50px 25px;
+		box-sizing: border-box;
+		margin-left:130px;
+	}
+	
+	.button {
+		width: 100%;
+	}
+	
+	.input label {
+		min-width: 140px;
+		display: inline-block;
+		font-size: 16px;
+		margin-bottom: 15px;
+	}
+	
+	.wrapper .image {
+		width: 70px;
+		height: 30px;
+		background: url("http://htmlbook.ru/files/images/practical/24.png");
+		background-position: -15px 105px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 70px;
+	}
+	
+	.input input:valid+span:after {
+		content: "✔";
+		color: #07A407;
+		margin-left: 10px;
+	}
+	
+	.input input:invalid+span:after {
+		content: "✖";
+		color: #D32222;
+		margin-left: 10px;
+	}
+	
+	.button button {
+		width: 170px;
+		height: 25px;
+		margin: 3% 0 3% 10%;
+		border-radius: 16px;
+		color: white;
+		background: linear-gradient(0deg, #009B00 30%, #3DC83D 100%);
+		border: 2px solid #039103;
+		box-shadow: inset 0 -18px 13px -10px #00DB00;
+	}
+	
+	button,
+	button:active,
+	button:focus {
+		outline: none;
+	}
+	/* Список добавления */
+	
+	.rounded {
+		counter-reset: li;
+		list-style: none;
+		font: 20px "Trebuchet MS", "Lucida Sans";
+		padding: 0;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+	}
+	
+	.rounded a {
+		width: 400px;
+		position: relative;
+		display: block;
+		padding: 20px 50px;
+		margin: 15px 100px;
+		background: #DAD2CA;
+		color: #444;
+		text-decoration: none;
+		border-radius: 5px;
+	}
+	
+	.rounded a:hover {
+		background: #E9E4E0;
+	}
+	
+	.rounded a:hover:before {
+		transform: rotate(360deg);
+	}
+	
+	.rounded a:before {
+		content: counter(li);
+		counter-increment: li;
+		position: absolute;
+		left: 10px;
+		top: 50%;
+		margin-top: -27px;
+		background: #8FD4C1;
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+		border: 7px solid white;
+		text-align: center;
+		font-weight: bold;
+		border-radius: 2em;
+		transition: all .3s ease-out;
+	}
+	
+	@media screen and (max-width: 1358px) {
+		.main_container {
+			width: 100%;
+		}
+		.film_container {
+			border-top: 3px solid #000;
+			border-bottom: 3px solid #000;
+		}
+		.about_film {
+			float: left;
+			width: 245px;
+			margin: 5px;
+			border: 1px solid #000;
+			padding: 5px;
+		}
+		.film_blocks {
+			margin: 0 auto;
+			width: 1070px;
+		}
+	}
+	
+	@media screen and (max-width: 1086px) {
+		.about_film {
+			margin: 15px;
+			width: 288px;
+		}
+		.film_blocks {
+			width: 665px;
+		}
+	}
+	
+	@media screen and (max-width: 1018px) {
+		.my_interests {
+			width: 100%;
+		}
+
+		.interests {
+			width: 40%;
+			margin-left: 5%;
+		}
+
+		@media screen and (max-width: 860px) {
+			.interests {
+				float: none;
+				margin: 0 auto;
+				margin-bottom: 5px;
+			}
+
+			ul,
+			ol {
+				font-size: 12px;
+			}
+
+			h3 {
+				font-size: 15px;
+			}
+		}
+		@media screen and (max-width: 400px) {
+			.about_film {
+				width: 100%;
+			}
+		}
+	}

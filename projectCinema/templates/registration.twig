@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="../templates/css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+      <title>Сinema site</title>
+   </head>
+   <body>
+   <div class="main_container">
+         <div class="name"> 
+            <h1 align="center">Регистрация</h1>
+            <div class="clear"></div>
+         </div>
+     <form class="input" name="form" method="post" action="signup_client.php">
+    <div class="wrapper">
+        <label for="Name">Имя</label><input type="textarea" placeholder="Иван" name="name" id="Name" required><span></span><br>
+        <label for="Surname">Фамилия</label><input type="textarea" placeholder="Иванов" name="surname" id="Surname" required><span></span><br><br>
+		<label for="Data">Дата Рождения</label><input type="date" placeholder="ДД.ММ.ГГ" name="date_of_born" id="Data" required><span></span><br>
+        <label for="Number">Номер телефона</label><input type="tel" placeholder="+7(***)***-**-**" name="phone_number" id="Number" required><span></span><br><br>
+		<label for="Login">Логин</label><input type="textarea" placeholder="Логин" name="login" id="Login" required><span></span><br>
+        <label for="Pas">Пароль</label><input type="password" id="pas" placeholder="Пароль" name="password2" id="Pas" required><span></span><br>
+        <label for="Verpas">Повторите пароль</label><input type="password" name="password3" id="verpas" placeholder="Введите еще раз" required><span></span><br><br>
+ <div class="button">
+        <p style="color:red">{{ error }}</p>
+        <button name="sign_up_client" type="submit">Зарегистрироваться</button><br><br><br>
+    </div>
+    </div>
+   
+</form>
+<div class="clear"></div>
+         <div class="my_contact">
+            <h4>© 2018 "Название сайта", Inc</h4>
+            <a href=""><img class="contacts" src="../templates/image/vk.png" alt="vk"></a>
+            <a href=""><img class="contacts" src="../templates/image/vi.jpg" alt="vi"></a>
+            <a href=""><img class="contacts" src="../templates/image/inst.jpg" alt="inst"></a>
+         </div>
+		 </div>
+   </body>
+</html>
