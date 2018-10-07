@@ -11,7 +11,7 @@
    <body>
       <div class="main_container">
          <div class="name">
-            <h1 align="center">Качественное кино</h1>
+            <h1 align="center">More tickets</h1>
             <div class="clear"></div>
          </div>
          <div class="interests1">
@@ -37,49 +37,37 @@
          </div>
          <div class="clear"></div>
          <div class="film_container">
-            <h1>Топ фильмы недели</h1>
+            <h1>фильмы</h1>
+            <form action="index.php" method="get">
+               <input type="submit" name="page_search" value="Далее">
+               <select id="selectItem" name="page">
+                   {% for page in pages %}
+                      <option id="select city">{{ page }}</option>
+                   {% endfor %}
+               </select>
+            </form>
             <div class="film_blocks">
-               <div class="about_film">
-                  <h3>"Название фильма"</h3>
-                  <img class="film" src="image/1.jpg" alt="Film1">
-                  <p>
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                  </p>
-               </div>
-               <div class="about_film">
-                  <h3>"Название фильма"<h3>
-                  <img class="film" src="image/1.jpg" alt="Film2">
-                  <p>
-					 Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                  </p>
-               </div>
-               <div class="about_film">
-                  <h3>"Название фильма"</h3>
-                  <img class="film" src="image/1.jpg" alt="Film3">
-                  <p>
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                  </p>
-               </div>
-               <div class="about_film">
-                  <h3>"Название фильма"</h3>
-                  <img class="film" src="image/1.jpg" alt="Film4">
-                  <p>
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                     Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст. Текст.
-                  </p>
-               </div>
+                {% for film in films %}
+                   <div class="about_film">
+                      <h3>"{{ film.name }}"</h3>
+                      <img class="film" src="{{ film.linkForImage }}" alt="Film1">
+                      <p>
+                         Год:{{ film.releaseDate }}
+                         Жанры:
+                          {% for genreF in film.genres %}
+                      <p>{{ genreF }}</p>
+                       {% endfor %}
+                      <br></br>
+                      Описание фильма:
+                       {{ film.description }}
+                      </p>
+                   </div>
+                {% endfor %}
                <div class="clear"></div>
             </div>
          </div>
          <div class="my_contact">
-            <h4>© 2018 "Название сайта", Inc</h4>
+            <h4>© 2018 "More tickets", Inc</h4>
             <a href=""><img class="contacts" src="../templates/image/vk.png" alt="vk"></a>
             <a href=""><img class="contacts" src="../templates/image/vi.jpg" alt="vi"></a>
             <a href=""><img class="contacts" src="../templates/image/inst.jpg" alt="inst"></a>

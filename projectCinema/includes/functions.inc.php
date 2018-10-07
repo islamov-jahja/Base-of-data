@@ -34,7 +34,7 @@ function sigNup($form, $data, $mysqli)
 
 
         if (empty($error)) {
-            $login = htmlspecialchars(stripslashes(trim($data["login"])));
+            $login = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($data["login"]))));
             $query = "Select name from `client` where login = " . "\"" . $login . "\";";
             $object = mysqli_query($mysqli, $query);
             $arr = mysqli_fetch_all($object);
@@ -44,11 +44,11 @@ function sigNup($form, $data, $mysqli)
 
 
         if (empty($error)) {
-            $login = htmlspecialchars(stripslashes(trim($data["login"])));
+            $login = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($data["login"]))));
             $password = password_hash($data["password2"], PASSWORD_DEFAULT);
-            $name = htmlspecialchars(stripslashes(trim($data["name"])));
-            $surname = htmlspecialchars(stripslashes(trim($data["surname"])));
-            $phoneNumber = htmlspecialchars(stripslashes(trim($data["phone_number"])));
+            $name = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($data["name"]))));
+            $surname = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($data["surname"]))));
+            $phoneNumber = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($data["phone_number"]))));
             $dateOfBirth = $data["date_of_born"];
 
             if ($form == "sign_up_client")
@@ -75,7 +75,7 @@ function login($data, $mysqli)
             $error[] = "Введите пароль";
 
         if(empty($error)) {
-            $login = htmlspecialchars(stripslashes(trim($data["login"])));
+            $login = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($data["login"]))));
 
             $query = "Select password, is_client  from `client` where login = " . "\"" . $login . "\";";
             $object = mysqli_query($mysqli, $query);
@@ -113,4 +113,59 @@ function getListOfCities($mysqli){
 
     return $arrWithCities;
 }
+
+function getListOfGenres($mysqli){
+    $query = "Select name from `genre`";
+    $object = mysqli_query($mysqli, $query);
+    $genres = mysqli_fetch_all($object);
+    $arrWithGenres = array();
+
+    for ($i = 0; $i < count($genres); $i++)
+        for ($j = 0; $j < 1; $j++)
+            $arrWithGenres[] = $genres[$i][$j];
+
+    return $arrWithGenres;
+}
+
+class Film{
+    public $name;
+    public $releaseDate;
+    public $linkForImage;
+    public $description;
+    public $genres = array();
+}
+
+function getListOfFilms($mysqli, $minValue, $NumberOfPage, $divider){
+    $min = $minValue + (($NumberOfPage-1) * $divider);
+    $max = $min + $divider;
+
+    $query = "Select id_film, name, release_date, image, description from `film` where id_film >= $min AND id_film < $max;";
+    $object = mysqli_query($mysqli, $query);
+    $arr = mysqli_fetch_all($object);
+    $films = array();
+
+    for ($i = 0; $i < count($arr); $i++){
+        $film = new Film();
+        $film->name = $arr[$i][1];
+        $film->releaseDate = $arr[$i][2];
+        $film->description = $arr[$i][4];
+        if ($arr[$i][3] != '')
+            $film->linkForImage = $arr[$i][3];
+        else
+            $film->linkForImage = "../templates/image/bg.jpg";
+        $id_film = $arr[$i][0];
+        $query = "Select genre.name from `genre` Left Join `genre_in_film` ON genre.id_genre = genre_in_film.id_genre Left JOIN `film` ON genre_in_film.id_film = film.id_film WHERE film.id_film = $id_film;";
+        $object = mysqli_query($mysqli, $query);
+        $arr2 = mysqli_fetch_all($object);
+
+        for($k = 0; $k < count($arr2); $k++)
+            $film->genres[] = $arr2[$k][0];
+
+        $films[] = $film;
+    }
+
+    return $films;
+}
+
 ?>
+

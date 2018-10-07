@@ -7,4 +7,4 @@ $data = $_POST;
 
 if(isset($data["do_search"]))
     echo $data["city"].' '.$data["nameOfFilm"];
-?>ц
+?>
