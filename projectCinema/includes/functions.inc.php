@@ -80,6 +80,7 @@ function login($data, $mysqli)
             $query = "Select password, is_client  from `client` where login = " . "\"" . $login . "\";";
             $object = mysqli_query($mysqli, $query);
             $arr = mysqli_fetch_all($object);
+			
             if (count($arr) == 0)
                 $error[] = "такого пользователя не существует";
             else if (!password_verify($data["password2"], $arr[0][0]))
