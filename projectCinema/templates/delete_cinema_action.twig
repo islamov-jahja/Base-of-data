@@ -37,22 +37,15 @@
 
 
    <div  class="cover">
-    		<form id="contactform" action="adding_cinema.php" method="post">
-    			<p class="contact"><label for="name">Название кинотеатра</label></p> 
-    			<input id="name" name="nameOfCinema" placeholder="Название кинотеатра" required="" tabindex="1" type="text">
-    			 
-				       <p class="contact"><label for="Subject">Город</label></p> 
-            <select id="selectItem" name="selectCity">
-                <option id="select city"></option>
-                {% for city in cities %}
-                    <option id="select city">{{ city }}</option>
+    		<form id="contactform" action="delete_cinema_action.php" method="post">
+            <p class="contact"><label for="Subject">Кинотеатры</label></p>
+            <select id="selectItem" name="selectCinema">
+                {% for cinema in cinemas %}
+                    <option id="select city">{{ cinema.id }} {{ cinema.name }} Город: {{ cinema.city }} Адресс: {{ cinema.address }}</option>
                 {% endfor %}
             </select>
-				 
-    			<p class="contact"><label for="date">Адрес кинотеатра</label></p> 
-    			<input id="date" name="address" placeholder="Адрес" required="" tabindex="2" type="text">
-
-    			<input name="to_add_cinema" id="submit" tabindex="5" value="Добавить кинотеатр" type="submit">
+                <br></br>
+    			<input name="to_delete_cinema" id="submit" tabindex="5" value="Удалить" type="submit">
     		</form>
             <a href="index.php" id="submit">На главное</a>
             <p style="color:green">{{ message }}</p>

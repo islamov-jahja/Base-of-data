@@ -28,7 +28,7 @@
          </div>
          <div class="interests2">
             <div class="batton">
-                <p style="color: white">{{ login }}</p>
+               <p style="color: white">{{ login }}</p>
                <p>&nbsp;</p>
                <a href="exit_from_accaunt.php" class="button1">Выход</a>
             </div>
@@ -37,26 +37,19 @@
 
 
    <div  class="cover">
-    		<form id="contactform" action="adding_cinema.php" method="post">
-    			<p class="contact"><label for="name">Название кинотеатра</label></p> 
-    			<input id="name" name="nameOfCinema" placeholder="Название кинотеатра" required="" tabindex="1" type="text">
+    		<form action="deleting_film.php" id="contactform" method="post" enctype="multipart/form-data">
+    			<p class="contact"><label for="name">Название фильма</label></p> 
+    			<input id="name" name="name" placeholder="Название фильма" required="" tabindex="1" type="text"> 
     			 
-				       <p class="contact"><label for="Subject">Город</label></p> 
-            <select id="selectItem" name="selectCity">
-                <option id="select city"></option>
-                {% for city in cities %}
-                    <option id="select city">{{ city }}</option>
-                {% endfor %}
-            </select>
-				 
-    			<p class="contact"><label for="date">Адрес кинотеатра</label></p> 
-    			<input id="date" name="address" placeholder="Адрес" required="" tabindex="2" type="text">
+    			<p class="contact"><label for="date">Дата релиза</label></p> 
+    			<input id="date" name="dateOfRelease" placeholder="ДД.ММ.ГГ" required="" tabindex="2" type="date">
 
-    			<input name="to_add_cinema" id="submit" tabindex="5" value="Добавить кинотеатр" type="submit">
-    		</form>
-            <a href="index.php" id="submit">На главное</a>
-            <p style="color:green">{{ message }}</p>
-            <p style="color:red">{{ error }}</p>
+    			<input name="deleting_film" id="submit" tabindex="5" value="Добавить фильм" type="submit">
+                <br>
+                <a href="index.php" id="submit">На главное</a>
+                <p style="color:red">{{ error }}</p>
+                <p style="color:green">{{ message }}</p>
+    		</form> 
      </div>       		 
          <div class="clear"></div>
          <div class="my_contact">

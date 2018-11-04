@@ -17,7 +17,7 @@
          <div class="interests1">
             <select id="selectItem">
                 {% for city in cities %}
-                    <option id="select city">{{ city }}</option>
+                   <option id="select city">{{ city }}</option>
                 {% endfor %}
             </select>
             
@@ -28,7 +28,7 @@
          </div>
          <div class="interests2">
             <div class="batton">
-                <p style="color: white">{{ login }}</p>
+               <p style="color: white">{{ login }}</p>
                <p>&nbsp;</p>
                <a href="exit_from_accaunt.php" class="button1">Выход</a>
             </div>
@@ -37,26 +37,14 @@
 
 
    <div  class="cover">
-    		<form id="contactform" action="adding_cinema.php" method="post">
-    			<p class="contact"><label for="name">Название кинотеатра</label></p> 
-    			<input id="name" name="nameOfCinema" placeholder="Название кинотеатра" required="" tabindex="1" type="text">
-    			 
-				       <p class="contact"><label for="Subject">Город</label></p> 
-            <select id="selectItem" name="selectCity">
-                <option id="select city"></option>
-                {% for city in cities %}
-                    <option id="select city">{{ city }}</option>
-                {% endfor %}
-            </select>
-				 
-    			<p class="contact"><label for="date">Адрес кинотеатра</label></p> 
-    			<input id="date" name="address" placeholder="Адрес" required="" tabindex="2" type="text">
-
-    			<input name="to_add_cinema" id="submit" tabindex="5" value="Добавить кинотеатр" type="submit">
+    		<form id="contactform" action="{{ script }}" method="post">
+    			<p class="contact"><label for="name">{{ block1 }}</label></p>
+    			<input id="name" name="{{ nameInput1 }}" placeholder="{{ block2 }}" required="" tabindex="1" type="text">
+    			<input name="{{ nameOfButton }}" id="submit" tabindex="5" value="{{ block3 }}" type="submit">
     		</form>
-            <a href="index.php" id="submit">На главное</a>
-            <p style="color:green">{{ message }}</p>
-            <p style="color:red">{{ error }}</p>
+      <a href="index.php" id="submit">На главное</a>
+      <p style="color:green">{{ message }}</p>
+      <p style="color:red">{{ error }}</p>
      </div>       		 
          <div class="clear"></div>
          <div class="my_contact">

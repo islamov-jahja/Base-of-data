@@ -47,7 +47,7 @@ else {
     echo $template->render(array(
         "cities" => $arrWithCities,
         "pages" => $pages,
-        "films" => $films,
+        "films" => $films
     ));
 }
 

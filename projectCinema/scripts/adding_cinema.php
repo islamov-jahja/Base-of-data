@@ -27,16 +27,10 @@ if(isset($_SESSION["logged_user"]) && $_SESSION["logged_user"][1] == 0/*не к�
             $city = $data["selectCity"];
             $addressOfCinema = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($data["address"]))));
 
-            $query = "SELECT id_city FROM `city` WHERE name = \"$city\";";
-            $object = mysqli_query($mysqli, $query);
-            $arrInfoAboutCity = mysqli_fetch_all($object);
-            $id_city = $arrInfoAboutCity[0][0];
+            $id_city = GetIdOfCity($mysqli, $city);
+            $arrInfoAboutFilm = GetInfoAboutCinema($mysqli, $nameOfCinema, $id_city);
 
-            $query = "SELECT * FROM `cinema` WHERE name = \"$nameOfCinema\" AND id_city = $id_city;";
-            $object = mysqli_query($mysqli, $query);
-            $arrInfoAboutCity = mysqli_fetch_all($object);
-
-            if(count($arrInfoAboutCity) == 0) {
+            if(count($arrInfoAboutFilm) == 0) {
                 $query = "INSERT INTO  `cinema` VALUES (null, \"$nameOfCinema\", \"$addressOfCinema\", $id_city);";
                 mysqli_query($mysqli, $query);
                 $message = "Кинотеатр успешно добавлен";

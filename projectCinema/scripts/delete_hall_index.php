@@ -2,20 +2,21 @@
 require_once ("../includes/db.inc.php");
 require_once ("../includes/functions.inc.php");
 require_once ("../includes/twig.inc.php");
-$template = $twig->loadTemplate("admin_registration.twig");
+$template = $twig->loadTemplate("delete_hole_choose.twig");
 
 if(isset($_SESSION["logged_user"]) && $_SESSION["logged_user"][1] == 0/*не клиент*/) {
     $cities = getListOfCities($mysqli);
-    $data = $_POST;
-    sigNup("sign_up_admin", $data, $mysqli);
+    $user = $_SESSION["logged_user"];
+
+    if(isset($_POST["to_choose_cinema"]))
+        $error = SelectCinemasWithName($mysqli, $_POST["nameOfCinema"], $_POST["selectCity"], "delete_hall_action.php");
 
     $error[] = '';
     echo $template->render(array(
+        'login' => $user[0],
         'cities' => $cities,
-        'login' => $_SESSION["logged_user"][0],
-        'error' => $error[0]
+        'error' => $error[0],
     ));
-} else
-    header("Location: index.php")
+}
 
 ?>

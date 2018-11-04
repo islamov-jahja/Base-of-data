@@ -6,12 +6,12 @@
       <link rel="stylesheet" href="../templates/css/style.css">
       <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
-      <title>More tickets</title>
+      <title>Качественное кино</title>
    </head>
    <body>
       <div class="main_container">
          <div class="name">
-            <h1 align="center">Качественное кино</h1>
+            <h1 align="center">More tickets</h1>
             <div class="clear"></div>
          </div>
          <div class="interests1">
@@ -26,13 +26,15 @@
                      <input type="submit" name="do_search" value="Найти">
                   </p>
                </form>
+               <a href="index.php" id="submit" style="color: red">Админ</a>
+               <a href="to_client_view.php" id="submit" style="color: red">Клиент</a>
             </form>
          </div>
          <div class="interests2">
             <div class="batton">
-               <a href="login.php" class="button">Войти</a>
+               <p style="color: white">{{ login }}</p>
                <p>&nbsp;</p>
-               <a href="signup_client.php" class="button">Регистрация</a>
+               <a href="exit_from_accaunt.php" class="button">Выход</a>
             </div>
          </div>
          <div class="clear"></div>
@@ -50,23 +52,23 @@
             {% endif %}
             <div class="film_blocks">
                 {% for film in films %}
-               <div class="about_film">
-                  <h3><a href="results.php?name={{ film.name }}">{{ film.name }}</a></h3>
-                  <img class="film" src="{{ film.linkForImage }}" alt="Film1">
-                  <p>
-                     Год:{{ film.releaseDate }}
-                     Жанры:
-                     {% for genreF in film.genres %}
-                        <p>{{ genreF }}</p>
-                     {% endfor %}
-                     <br></br>
-                     Описание фильма:
-                     {{ film.description }}
-                  </p>
-               </div>
+                   <div class="about_film">
+                      <h3><a href="results.php?name={{ film.name }}">{{ film.name }}"</a></h3>
+                      <img class="film" src="{{ film.linkForImage }}" alt="Film1">
+                      <p>
+                         Год:{{ film.releaseDate }}
+                         Жанры:
+                          {% for genreF in film.genres %}
+                      <p>{{ genreF }}</p>
+                       {% endfor %}
+                      <br></br>
+                      Описание фильма:
+                       {{ film.description }}
+                      </p>
+                   </div>
                 {% endfor %}
                <p style="color: green;">{{ message }}</p>
-               <a href="index.php" id="submit" style="color: blue">На главное</a>
+               <a href="to_client_view.php" id="submit" style="color: blue">На главное</a>
                <div class="clear"></div>
             </div>
          </div>

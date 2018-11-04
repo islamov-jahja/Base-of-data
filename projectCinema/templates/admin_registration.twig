@@ -15,7 +15,7 @@
             <div class="clear"></div>
          </div>
          <div class="interests1">
-            <form action="result.php" method="post">
+            <form action="searchInIndex.php" method="post">
                <select id="selectItem" name="city">
                   {% for city in cities %}
                       <option id="select city">{{ city }}</option>
@@ -37,39 +37,22 @@
          </div>
          <div class="clear"></div>
          <div class="film_container">
-            <h1>Фильмы</h1>
-             {% if isResult == false %}
-            <form action="index.php" method="get">
-               <input type="submit" name="page_search" value="Далее">
-               <select id="selectItem" name="page">
-                   {% for page in pages %}
-                      <option id="select city">{{ page }}</option>
-                   {% endfor %}
-               </select>
-            </form>
-             {% endif %}
-            <div class="film_blocks">
-                {% for film in films %}
-                   <div class="about_film">
-                      <h3><a href="results.php?name={{ film.name }}">{{ film.name }}"</a></h3>
-                      <img class="film" src="{{ film.linkForImage }}" alt="Film1">
-                      <p>
-                         Год:{{ film.releaseDate }}
-                         Жанры:
-                          {% for genreF in film.genres %}
-                      <p>{{ genreF }}</p>
-                       {% endfor %}
-                      <br></br>
-                      Описание фильма:
-                       {{ film.description }}
-                      </p>
-                   </div>
-                {% endfor %}
-               <p style="color: green;">{{ message }}</p>
-               <a href="index.php" id="submit" style="color: blue">На главное</a>
-               <div class="clear"></div>
+            <form class="input" name="form" method="post" action="signup_admin.php">
+            <div class="wrapper">
+               <label for="Name">Имя</label><input type="textarea" placeholder="Иван" name="name" id="Name" required><span></span><br>
+               <label for="Surname">Фамилия</label><input type="textarea" placeholder="Иванов" name="surname" id="Surname" required><span></span><br><br>
+               <label for="Data">Дата Рождения</label><input type="date" placeholder="ДД.ММ.ГГ" name="date_of_born" id="Data" required><span></span><br>
+               <label for="Number">Номер телефона</label><input type="tel" placeholder="+7(***)***-**-**" name="phone_number" id="Number" required><span></span><br><br>
+               <label for="Login">Логин</label><input type="textarea" placeholder="Логин" name="login" id="Login" required><span></span><br>
+               <label for="Pas">Пароль</label><input type="password" id="pas" placeholder="Пароль" name="password2" id="Pas" required><span></span><br>
+               <label for="Verpas">Повторите пароль</label><input type="password" name="password3" id="verpas" placeholder="Введите еще раз" required><span></span><br><br>
+               <div class="button">
+                  <p style="color:red">{{ error }}</p>
+                  <button name="sign_up_admin" type="submit">Зарегистрировать админа</button><br><br><br>
+                  <a href="index.php" id="submit" style="color: #07A407">На главное</a>
             </div>
-         </div>
+            </div>
+         </form>
          <div class="my_contact">
             <h4>© 2018 "More tickets", Inc</h4>
             <a href=""><img class="contacts" src="../templates/image/vk.png" alt="vk"></a>

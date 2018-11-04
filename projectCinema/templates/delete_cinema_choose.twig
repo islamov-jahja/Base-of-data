@@ -37,7 +37,7 @@
 
 
    <div  class="cover">
-    		<form id="contactform" action="adding_cinema.php" method="post">
+    		<form id="contactform" action="delete_cinema.php" method="post">
     			<p class="contact"><label for="name">Название кинотеатра</label></p> 
     			<input id="name" name="nameOfCinema" placeholder="Название кинотеатра" required="" tabindex="1" type="text">
     			 
@@ -48,11 +48,8 @@
                     <option id="select city">{{ city }}</option>
                 {% endfor %}
             </select>
-				 
-    			<p class="contact"><label for="date">Адрес кинотеатра</label></p> 
-    			<input id="date" name="address" placeholder="Адрес" required="" tabindex="2" type="text">
-
-    			<input name="to_add_cinema" id="submit" tabindex="5" value="Добавить кинотеатр" type="submit">
+                <br></br>
+    			<input name="to_choose_cinema" id="submit" tabindex="5" value="Выбрать" type="submit">
     		</form>
             <a href="index.php" id="submit">На главное</a>
             <p style="color:green">{{ message }}</p>

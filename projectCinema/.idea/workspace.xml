@@ -12,8 +12,155 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="project_cinema@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="project_cinema@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="project_cinema@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="project_cinema: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="51" column="1" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="51" selection-end-column="1" />
+              <folding>
+                <marker date="1539252060357" expanded="true" signature="149:190" ph="Select count... film" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/result.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="55" column="59" lean-forward="false" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+              <folding>
+                <marker date="1541369905312" expanded="true" signature="245:327" ph="Select from `film`... " />
+                <marker date="1541369905312" expanded="true" signature="245:330" ph="Select from `film`... " />
+                <marker date="1541369905312" expanded="true" signature="245:345" ph="Select from `film`... " />
+                <marker date="1541369905312" expanded="true" signature="245:1249" ph="Select from `film`... " />
+                <marker date="1541369905312" expanded="true" signature="827:1005" ph="Select genre... genre" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_client.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index_client.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index_client_admin.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/index_client_admin.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="956">
+              <caret line="70" column="15" lean-forward="false" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="90" />
+              <folding>
+                <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="delete_city.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/delete_city.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="55" />
+              <folding>
+                <marker date="1540673217570" expanded="true" signature="677:732" ph="SELECT id_ci... city" />
+                <marker date="1540673217570" expanded="true" signature="923:968" ph="Delete from city... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions_of_film.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/functions_of_film.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="functions.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/includes/functions.inc.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="146">
+              <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="170" selection-end-column="5" />
+              <folding>
+                <marker date="1541363529739" expanded="true" signature="1373:1436" ph="Select name client" />
+                <marker date="1541363529739" expanded="true" signature="2345:2473" ph="Insert into `client`... " />
+                <marker date="1541363529739" expanded="true" signature="2519:2648" ph="Insert into `client`... " />
+                <marker date="1541363529739" expanded="true" signature="3227:3306" ph="Select passw... client" />
+                <marker date="1541363529739" expanded="true" signature="4028:4051" ph="Select name city" />
+                <marker date="1541363529739" expanded="true" signature="4379:4403" ph="Select name genre" />
+                <marker date="1541363529739" expanded="true" signature="5009:5092" ph="Select name,... film" />
+                <marker date="1541363529739" expanded="true" signature="5009:5101" ph="Select name,... film" />
+                <marker date="1541363529739" expanded="true" signature="5009:5102" ph="Select name,... film" />
+                <marker date="1541363529739" expanded="true" signature="5009:5111" ph="Select name,... film" />
+                <marker date="1541363529739" expanded="true" signature="5009:5112" ph="Select name,... film" />
+                <marker date="1541363529739" expanded="true" signature="5620:5798" ph="Select name genre" />
+                <marker date="1541363529739" expanded="true" signature="6272:6321" ph="SELECT id_ci... city" />
+                <marker date="1541363529739" expanded="true" signature="6563:6631" ph="SELECT * FRO... cinema" />
+                <marker date="1541363529739" expanded="true" signature="6839:6905" ph="SELECT id_ha... hall" />
+                <marker date="1541363529739" expanded="true" signature="6839:6917" ph="SELECT id_ha... hall" />
+                <marker date="1541363529739" expanded="true" signature="6839:6918" ph="SELECT id_ha... hall" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -28,40 +175,63 @@
       <find>wra</find>
       <find>image</find>
       <find>header</find>
+      <find>sig</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/includes/db.inc.php" />
-        <option value="$PROJECT_DIR$/scripts/signup.php" />
-        <option value="$PROJECT_DIR$/scripts/signup_admin.php" />
-        <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/includes/twig.php" />
-        <option value="$PROJECT_DIR$/includes/twig.inc.php" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
-        <option value="$PROJECT_DIR$/scripts/signup_client.php" />
-        <option value="$PROJECT_DIR$/templates/index_for_adim.html" />
-        <option value="$PROJECT_DIR$/templates/css/style.css" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
-        <option value="$PROJECT_DIR$/scripts/login.php" />
-        <option value="$PROJECT_DIR$/scripts/exit_from_accaunt.php" />
-        <option value="$PROJECT_DIR$/templates/add_menu.html" />
-        <option value="$PROJECT_DIR$/templates/AddingTheFilm.html" />
-        <option value="$PROJECT_DIR$/templates/login.twig" />
-        <option value="$PROJECT_DIR$/templates/registration.twig" />
-        <option value="$PROJECT_DIR$/templates/searchResultForNone.twig" />
-        <option value="$PROJECT_DIR$/templates/searchResultsForClient.twig" />
-        <option value="$PROJECT_DIR$/includes/functions.inc.php" />
-        <option value="$PROJECT_DIR$/templates/index.twig" />
-        <option value="$PROJECT_DIR$/scripts/index.php" />
-        <option value="$PROJECT_DIR$/scripts/searchInIndex.php" />
-        <option value="$PROJECT_DIR$/templates/index_client.twig" />
-        <option value="$PROJECT_DIR$/templates/index_admin.twig" />
         <option value="$PROJECT_DIR$/templates/AddingTheFilm.twig" />
         <option value="$PROJECT_DIR$/scripts/adding_film.php" />
+        <option value="$PROJECT_DIR$/templates/add_city.twig" />
+        <option value="$PROJECT_DIR$/templates/add_city_genre.twig" />
+        <option value="$PROJECT_DIR$/scripts/add_genre.php" />
+        <option value="$PROJECT_DIR$/scripts/deleteCity.php" />
+        <option value="$PROJECT_DIR$/scripts/add_city.php" />
+        <option value="$PROJECT_DIR$/scripts/add_admin.php" />
+        <option value="$PROJECT_DIR$/scripts/signup_admin.php" />
+        <option value="$PROJECT_DIR$/templates/registration.twig" />
+        <option value="$PROJECT_DIR$/templates/admin_registration.twig" />
         <option value="$PROJECT_DIR$/scripts/adding_cinema.php" />
+        <option value="$PROJECT_DIR$/templates/delete_cinema_choose.twig" />
         <option value="$PROJECT_DIR$/templates/add_cinema.twig" />
+        <option value="$PROJECT_DIR$/scripts/functions_of_cinema.php" />
+        <option value="$PROJECT_DIR$/scripts/functions_of_film.php" />
+        <option value="$PROJECT_DIR$/scripts/functions_of_city.php" />
+        <option value="$PROJECT_DIR$/scripts/functions_of_genre.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/7eb7d26d-6832-4809-859f-3b123cea24cf/console.sql" />
+        <option value="$PROJECT_DIR$/scripts/delete_city.php" />
+        <option value="$PROJECT_DIR$/scripts/delete_genre.php" />
+        <option value="$PROJECT_DIR$/templates/functions_city.twig" />
+        <option value="$PROJECT_DIR$/templates/functions_genre.twig" />
+        <option value="$PROJECT_DIR$/scripts/index.php" />
+        <option value="$PROJECT_DIR$/templates/DeleteTheFilm.twig" />
+        <option value="$PROJECT_DIR$/templates/functions_film.twig" />
+        <option value="$PROJECT_DIR$/scripts/deleting_film.php" />
+        <option value="$PROJECT_DIR$/templates/add_hole_index.twig" />
+        <option value="$PROJECT_DIR$/scripts/add_holle_index.php" />
+        <option value="$PROJECT_DIR$/templates/add_hole_choose.twig" />
+        <option value="$PROJECT_DIR$/templates/add_hole_action.twig" />
+        <option value="$PROJECT_DIR$/scripts/add_hole_action.php" />
+        <option value="$PROJECT_DIR$/scripts/add_hole_index.php" />
+        <option value="$PROJECT_DIR$/scripts/delete_cinema.php" />
+        <option value="$PROJECT_DIR$/templates/functions_cinema.twig" />
+        <option value="$PROJECT_DIR$/templates/delete_cinema_action.twig" />
+        <option value="$PROJECT_DIR$/scripts/delete_hall_index.php" />
+        <option value="$PROJECT_DIR$/scripts/delete_hall_action.php" />
+        <option value="$PROJECT_DIR$/templates/delete_hole_choose.twig" />
+        <option value="$PROJECT_DIR$/templates/delete_hole_action.twig" />
+        <option value="$PROJECT_DIR$/templates/delete_hall_final.twig" />
+        <option value="$PROJECT_DIR$/scripts/delete_cinema_action.php" />
+        <option value="$PROJECT_DIR$/includes/functions.inc.php" />
+        <option value="$PROJECT_DIR$/scripts/delete_hall_final.php" />
+        <option value="$PROJECT_DIR$/scripts/to_client_view.php" />
+        <option value="$PROJECT_DIR$/templates/index_admin.twig" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9fa10b85-925f-48ce-b098-3656c9adc592/console.sql" />
+        <option value="$PROJECT_DIR$/templates/index_client_admin.twig" />
+        <option value="$PROJECT_DIR$/templates/index_client.twig" />
+        <option value="$PROJECT_DIR$/templates/index.twig" />
+        <option value="$PROJECT_DIR$/scripts/result.php" />
       </list>
     </option>
   </component>
@@ -96,7 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -124,12 +293,21 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/SQL Dialects" value="MySQL" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\projectCinema\templates" />
+      <recent name="C:\wamp64\www\projectCinema\scripts" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -165,32 +343,40 @@
       <workItem from="1538911203703" duration="10399000" />
       <workItem from="1538923011551" duration="19924000" />
       <workItem from="1539202790307" duration="6489000" />
+      <workItem from="1539212284268" duration="2417000" />
+      <workItem from="1539248799822" duration="7209000" />
+      <workItem from="1540413158604" duration="11129000" />
+      <workItem from="1540640778671" duration="12035000" />
+      <workItem from="1540747187542" duration="2994000" />
+      <workItem from="1540888440097" duration="1909000" />
+      <workItem from="1541351792759" duration="18588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87667000" />
+    <option name="totallyTimeSpent" value="143948000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17019667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.48487142" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18305598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.5151286" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -205,21 +391,17 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/scripts/index.php">
+    <entry file="file://$PROJECT_DIR$/templates/admin_registration.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="30" lean-forward="false" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
-          <folding>
-            <marker date="1538944496171" expanded="true" signature="149:190" ph="Select count... film" />
-          </folding>
+        <state relative-caret-position="418">
+          <caret line="50" column="45" lean-forward="false" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.twig">
+    <entry file="file://$PROJECT_DIR$/scripts/add_city.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" column="19" lean-forward="true" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="86" />
         </state>
       </provider>
     </entry>
@@ -227,284 +409,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/adding_film.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1539207261060" expanded="true" signature="851:889" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:902" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:904" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:923" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:924" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:926" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:940" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:941" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:942" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="1335:1441" ph="INSERT INTO `film`... " />
-            <marker date="1539207261060" expanded="true" signature="1488:1582" ph="INSERT INTO `film`... " />
-            <marker date="1539207261060" expanded="true" signature="1815:1908" ph="INSERT INTO `film`... " />
-            <marker date="1539207261060" expanded="true" signature="1955:2036" ph="INSERT INTO `film`... " />
-            <marker date="1539207261060" expanded="true" signature="2271:2327" ph="Select id_fi... film" />
-            <marker date="1539207261060" expanded="true" signature="3012:3070" ph="Select id_ge... genre" />
-            <marker date="1539207261060" expanded="true" signature="3232:3294" ph="INSERT INTO `genre_in_film`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/functions.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="35" lean-forward="false" selection-start-line="89" selection-start-column="35" selection-end-line="89" selection-end-column="35" />
-          <folding>
-            <marker date="1539085724235" expanded="true" signature="1372:1435" ph="Select name client" />
-            <marker date="1539085724235" expanded="true" signature="2344:2472" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="2518:2647" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="3224:3303" ph="Select passw... client" />
-            <marker date="1539085724235" expanded="true" signature="4034:4057" ph="Select name city" />
-            <marker date="1539085724235" expanded="true" signature="4384:4408" ph="Select name genre" />
-            <marker date="1539085724235" expanded="true" signature="4993:5076" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5085" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5086" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5095" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5096" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="5603:5781" ph="Select name genre" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/AddingTheFilm.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="0" lean-forward="true" selection-start-line="46" selection-start-column="16" selection-end-line="48" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1538944496171" expanded="true" signature="149:190" ph="Select count... film" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/functions.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding>
-            <marker date="1539085724235" expanded="true" signature="1372:1435" ph="Select name client" />
-            <marker date="1539085724235" expanded="true" signature="2344:2472" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="2518:2647" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="3224:3303" ph="Select passw... client" />
-            <marker date="1539085724235" expanded="true" signature="4034:4057" ph="Select name city" />
-            <marker date="1539085724235" expanded="true" signature="4384:4408" ph="Select name genre" />
-            <marker date="1539085724235" expanded="true" signature="4993:5076" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5085" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5086" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5095" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5096" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="5603:5781" ph="Select name genre" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/signup_client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="6" lean-forward="false" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <marker date="1538944496171" expanded="true" signature="149:190" ph="Select count... film" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/functions.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <marker date="1539085724235" expanded="true" signature="1372:1435" ph="Select name client" />
-            <marker date="1539085724235" expanded="true" signature="2344:2472" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="2518:2647" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="3224:3303" ph="Select passw... client" />
-            <marker date="1539085724235" expanded="true" signature="4034:4057" ph="Select name city" />
-            <marker date="1539085724235" expanded="true" signature="4384:4408" ph="Select name genre" />
-            <marker date="1539085724235" expanded="true" signature="4993:5076" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5085" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5086" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5095" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5096" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="5603:5781" ph="Select name genre" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/searchInIndex.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="12" lean-forward="false" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
-          <folding>
-            <marker date="1538944496171" expanded="true" signature="149:190" ph="Select count... film" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/functions.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <marker date="1539085724235" expanded="true" signature="1372:1435" ph="Select name client" />
-            <marker date="1539085724235" expanded="true" signature="2344:2472" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="2518:2647" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="3224:3303" ph="Select passw... client" />
-            <marker date="1539085724235" expanded="true" signature="4034:4057" ph="Select name city" />
-            <marker date="1539085724235" expanded="true" signature="4384:4408" ph="Select name genre" />
-            <marker date="1539085724235" expanded="true" signature="4993:5076" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5085" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5086" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5095" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5096" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="5603:5781" ph="Select name genre" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/searchInIndex.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="12" lean-forward="true" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1538944496171" expanded="true" signature="149:190" ph="Select count... film" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/db.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/functions.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1037">
-          <caret line="61" column="1" lean-forward="false" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
-          <folding>
-            <marker date="1539085724235" expanded="true" signature="1372:1435" ph="Select name client" />
-            <marker date="1539085724235" expanded="true" signature="2344:2472" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="2518:2647" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="3224:3303" ph="Select passw... client" />
-            <marker date="1539085724235" expanded="true" signature="4034:4057" ph="Select name city" />
-            <marker date="1539085724235" expanded="true" signature="4384:4408" ph="Select name genre" />
-            <marker date="1539085724235" expanded="true" signature="4993:5076" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5085" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5086" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5095" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5096" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="5603:5781" ph="Select name genre" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="55" lean-forward="true" selection-start-line="15" selection-start-column="55" selection-end-line="15" selection-end-column="55" />
+        <state relative-caret-position="119">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/index.php">
+    <entry file="file://$PROJECT_DIR$/scripts/signup_admin.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1538944496171" expanded="true" signature="149:190" ph="Select count... film" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="18" lean-forward="false" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/signup_client.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="39" lean-forward="true" selection-start-line="12" selection-start-column="39" selection-end-line="12" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="29" lean-forward="false" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index_for_adim.html" />
-    <entry file="file://$PROJECT_DIR$/templates/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5185">
-          <caret line="305" column="5" lean-forward="false" selection-start-line="305" selection-start-column="5" selection-end-line="305" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.html" />
-    <entry file="file://$PROJECT_DIR$/templates/add_menu.html" />
     <entry file="file://$PROJECT_DIR$/scripts/exit_from_accaunt.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -512,158 +433,60 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/twig.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/db.inc.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/result_enter.html" />
-    <entry file="file://$PROJECT_DIR$/scripts/signup_admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="40" lean-forward="false" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/AddingTheFilm.html" />
-    <entry file="file://$PROJECT_DIR$/scripts/login.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/searchResultsForClient.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/searchInIndex.php">
+    <entry file="file://$PROJECT_DIR$/scripts/functions_of_cinema.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
-          <folding />
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/functions.inc.php">
+    <entry file="file://$PROJECT_DIR$/scripts/functions_of_city.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1516">
-          <caret line="163" column="0" lean-forward="false" selection-start-line="163" selection-start-column="0" selection-end-line="163" selection-end-column="0" />
-          <folding>
-            <marker date="1539085724235" expanded="true" signature="1372:1435" ph="Select name client" />
-            <marker date="1539085724235" expanded="true" signature="2344:2472" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="2518:2647" ph="Insert into `client`... " />
-            <marker date="1539085724235" expanded="true" signature="3224:3303" ph="Select passw... client" />
-            <marker date="1539085724235" expanded="true" signature="4034:4057" ph="Select name city" />
-            <marker date="1539085724235" expanded="true" signature="4384:4408" ph="Select name genre" />
-            <marker date="1539085724235" expanded="true" signature="4993:5076" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5085" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5086" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5095" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="4993:5096" ph="Select name,... film" />
-            <marker date="1539085724235" expanded="true" signature="5603:5781" ph="Select name genre" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/signup_client.php">
+    <entry file="file://$PROJECT_DIR$/scripts/functions_of_genre.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="4" selection-end-column="53" />
-          <folding />
+        <state relative-caret-position="136">
+          <caret line="8" column="56" lean-forward="false" selection-start-line="8" selection-start-column="56" selection-end-line="8" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/registration.twig">
+    <entry file="file://$PROJECT_DIR$/templates/add_city_genre.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="26" column="8" lean-forward="true" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="44" />
-          <folding />
+        <state relative-caret-position="103">
+          <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/searchResultForNone.twig">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7eb7d26d-6832-4809-859f-3b123cea24cf/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="96" column="36" lean-forward="false" selection-start-line="96" selection-start-column="36" selection-end-line="96" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="203">
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="22" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/login.twig">
+    <entry file="file://$PROJECT_DIR$/templates/functions_city.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="261">
+          <caret line="42" column="64" lean-forward="false" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index_client.twig">
+    <entry file="file://$PROJECT_DIR$/templates/functions_genre.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="32" column="54" lean-forward="false" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="21" column="30" lean-forward="true" selection-start-line="19" selection-start-column="18" selection-end-line="21" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index_admin.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="42" column="29" lean-forward="false" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/AddingTheFilm.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="84" column="56" lean-forward="true" selection-start-line="84" selection-start-column="56" selection-end-line="84" selection-end-column="56" />
-          <folding>
-            <element signature="n#style#0;n#p#5;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#6;n#form#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="261">
+          <caret line="42" column="64" lean-forward="false" selection-start-line="42" selection-start-column="64" selection-end-line="42" selection-end-column="64" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/adding_film.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
+        <state relative-caret-position="1377">
           <caret line="81" column="27" lean-forward="false" selection-start-line="81" selection-start-column="27" selection-end-line="81" selection-end-column="27" />
           <folding>
-            <marker date="1539207261060" expanded="true" signature="851:889" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:902" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:904" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:923" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:924" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:926" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:940" ph="Select name film" />
-            <marker date="1539207261060" expanded="true" signature="851:941" ph="Select name film" />
             <marker date="1539207261060" expanded="true" signature="851:942" ph="Select name film" />
             <marker date="1539207261060" expanded="true" signature="1335:1441" ph="INSERT INTO `film`... " />
             <marker date="1539207261060" expanded="true" signature="1488:1582" ph="INSERT INTO `film`... " />
@@ -676,50 +499,359 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/add_cinema.twig">
+    <entry file="file://$PROJECT_DIR$/scripts/signup_client.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="62" column="9" lean-forward="false" selection-start-line="62" selection-start-column="9" selection-end-line="64" selection-end-column="18" />
+        <state relative-caret-position="102">
+          <caret line="6" column="15" lean-forward="false" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/deleting_film.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#p#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1540889989109" expanded="true" signature="633:724" ph="Select name film" />
+            <marker date="1540889989109" expanded="true" signature="939:1024" ph="Delete from film... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/DeleteTheFilm.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="51" selection-end-line="48" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_hole_index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="43" column="117" lean-forward="false" selection-start-line="43" selection-start-column="117" selection-end-line="43" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/add_holle_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="42" lean-forward="false" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/adding_cinema.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="4" lean-forward="true" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="21" />
           <folding>
-            <marker date="1539208433457" expanded="true" signature="1058:1073" ph="SELECT id_ci... " />
-            <marker date="1539208433457" expanded="true" signature="1058:1097" ph="SELECT id_ci... city" />
-            <marker date="1539208433457" expanded="true" signature="1058:1098" ph="SELECT id_ci... city" />
-            <marker date="1539208433457" expanded="true" signature="1058:1099" ph="SELECT id_ci... city" />
-            <marker date="1539208433457" expanded="true" signature="1058:1100" ph="SELECT id_ci... city" />
-            <marker date="1539208433457" expanded="true" signature="1058:1105" ph="SELECT id_ci... city" />
-            <marker date="1539208433457" expanded="true" signature="1058:1107" ph="SELECT id_ci... city" />
-            <marker date="1539208433457" expanded="true" signature="1058:1559" ph="SELECT id_ci... city" />
-            <marker date="1539208433457" expanded="true" signature="1294:1347" ph="SELECT * FRO... cinema" />
-            <marker date="1539208433457" expanded="true" signature="1294:1361" ph="SELECT * FRO... cinema" />
-            <marker date="1539208433457" expanded="true" signature="1294:1362" ph="SELECT * FRO... cinema" />
-            <marker date="1539208433457" expanded="true" signature="1294:1363" ph="SELECT * FRO... cinema" />
-            <marker date="1539208433457" expanded="true" signature="1561:1599" ph="INSERT INTO cinema" />
-            <marker date="1539208433457" expanded="true" signature="1561:1613" ph="INSERT INTO cinema" />
-            <marker date="1539208433457" expanded="true" signature="1561:1617" ph="INSERT INTO cinema" />
-            <marker date="1539208433457" expanded="true" signature="1561:1638" ph="INSERT INTO cinema" />
-            <marker date="1539208433457" expanded="true" signature="1561:1646" ph="INSERT INTO cinema" />
-            <marker date="1539208433457" expanded="true" signature="1561:1647" ph="INSERT INTO cinema" />
+            <marker date="1540415067191" expanded="true" signature="1249:1335" ph="INSERT INTO cinema" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_cinema.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="53" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_cinema_choose.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-136">
+          <caret line="27" column="15" lean-forward="true" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_hole_choose.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="41" column="51" lean-forward="false" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/functions_cinema.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="43" column="49" lean-forward="false" selection-start-line="43" selection-start-column="49" selection-end-line="43" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_hall_action.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-612">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_cinema_action.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="41" column="54" lean-forward="false" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/add_hole_action.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="53" column="40" lean-forward="false" selection-start-line="53" selection-start-column="40" selection-end-line="53" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/add_hole_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="52" column="1" lean-forward="true" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
+          <folding>
+            <marker date="1541357057825" expanded="true" signature="1506:1545" ph="Select from `hall`... " />
+            <marker date="1541357057825" expanded="true" signature="1506:1559" ph="Select from `hall`... " />
+            <marker date="1541357057825" expanded="true" signature="1506:1577" ph="Select from `hall`... " />
+            <marker date="1541357057825" expanded="true" signature="1506:1592" ph="Select from `hall`... " />
+            <marker date="1541357057825" expanded="true" signature="1839:1919" ph="Insert into `hall`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/delete_cinema.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="119" lean-forward="false" selection-start-line="10" selection-start-column="119" selection-end-line="10" selection-end-column="119" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/add_hole_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="117" lean-forward="true" selection-start-line="11" selection-start-column="117" selection-end-line="11" selection-end-column="117" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_hole_action.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="8" column="32" lean-forward="true" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/delete_hall_index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_hole_choose.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="39" column="80" lean-forward="true" selection-start-line="39" selection-start-column="80" selection-end-line="39" selection-end-column="80" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/delete_hall_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="8" column="37" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <marker date="1541361337903" expanded="true" signature="1144:1183" ph="select * fro... hall" />
+            <marker date="1541361337903" expanded="true" signature="1144:1184" ph="select * fro... hall" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/delete_cinema_action.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <marker date="1541363053533" expanded="true" signature="1157:1205" ph="Delete from `cinema`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/delete_hall_final.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="10" column="76" lean-forward="false" selection-start-line="10" selection-start-column="76" selection-end-line="10" selection-end-column="76" />
+          <folding>
+            <marker date="1541363589903" expanded="true" signature="1047:1089" ph="Delete from `hall`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/delete_hall_final.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="41" column="52" lean-forward="false" selection-start-line="41" selection-start-column="52" selection-end-line="41" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/delete_genre.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-404">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="86" />
+          <folding>
+            <marker date="1540673255458" expanded="true" signature="680:738" ph="SELECT id_ge... genre" />
+            <marker date="1540673255458" expanded="true" signature="931:978" ph="Delete from genre... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/to_client_view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1541364665254" expanded="true" signature="239:280" ph="Select count... film" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/functions_film.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="43" column="92" lean-forward="true" selection-start-line="43" selection-start-column="15" selection-end-line="43" selection-end-column="92" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index_admin.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="29" column="63" lean-forward="false" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9fa10b85-925f-48ce-b098-3656c9adc592/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/functions_of_film.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="21" column="52" lean-forward="false" selection-start-line="21" selection-start-column="52" selection-end-line="21" selection-end-column="52" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="39" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="39" />
+        <state relative-caret-position="663">
+          <caret line="51" column="1" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="51" selection-end-column="1" />
           <folding>
-            <marker date="1538944496171" expanded="true" signature="149:190" ph="Select count... film" />
+            <marker date="1539252060357" expanded="true" signature="149:190" ph="Select count... film" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/delete_city.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="55" />
+          <folding>
+            <marker date="1540673217570" expanded="true" signature="677:732" ph="SELECT id_ci... city" />
+            <marker date="1540673217570" expanded="true" signature="923:968" ph="Delete from city... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/functions.inc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="152" column="0" lean-forward="false" selection-start-line="152" selection-start-column="0" selection-end-line="170" selection-end-column="5" />
+          <folding>
+            <marker date="1541363529739" expanded="true" signature="1373:1436" ph="Select name client" />
+            <marker date="1541363529739" expanded="true" signature="2345:2473" ph="Insert into `client`... " />
+            <marker date="1541363529739" expanded="true" signature="2519:2648" ph="Insert into `client`... " />
+            <marker date="1541363529739" expanded="true" signature="3227:3306" ph="Select passw... client" />
+            <marker date="1541363529739" expanded="true" signature="4028:4051" ph="Select name city" />
+            <marker date="1541363529739" expanded="true" signature="4379:4403" ph="Select name genre" />
+            <marker date="1541363529739" expanded="true" signature="5009:5092" ph="Select name,... film" />
+            <marker date="1541363529739" expanded="true" signature="5009:5101" ph="Select name,... film" />
+            <marker date="1541363529739" expanded="true" signature="5009:5102" ph="Select name,... film" />
+            <marker date="1541363529739" expanded="true" signature="5009:5111" ph="Select name,... film" />
+            <marker date="1541363529739" expanded="true" signature="5009:5112" ph="Select name,... film" />
+            <marker date="1541363529739" expanded="true" signature="5620:5798" ph="Select name genre" />
+            <marker date="1541363529739" expanded="true" signature="6272:6321" ph="SELECT id_ci... city" />
+            <marker date="1541363529739" expanded="true" signature="6563:6631" ph="SELECT * FRO... cinema" />
+            <marker date="1541363529739" expanded="true" signature="6839:6905" ph="SELECT id_ha... hall" />
+            <marker date="1541363529739" expanded="true" signature="6839:6917" ph="SELECT id_ha... hall" />
+            <marker date="1541363529739" expanded="true" signature="6839:6918" ph="SELECT id_ha... hall" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index_client_admin.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="956">
+          <caret line="70" column="15" lean-forward="false" selection-start-line="70" selection-start-column="15" selection-end-line="70" selection-end-column="90" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="60" column="33" lean-forward="true" selection-start-line="60" selection-start-column="33" selection-end-line="60" selection-end-column="33" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index_client.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="69" column="40" lean-forward="true" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/result.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="59" lean-forward="false" selection-start-line="55" selection-start-column="59" selection-end-line="55" selection-end-column="59" />
+          <folding>
+            <marker date="1541369905312" expanded="true" signature="245:327" ph="Select from `film`... " />
+            <marker date="1541369905312" expanded="true" signature="245:330" ph="Select from `film`... " />
+            <marker date="1541369905312" expanded="true" signature="245:345" ph="Select from `film`... " />
+            <marker date="1541369905312" expanded="true" signature="245:1249" ph="Select from `film`... " />
+            <marker date="1541369905312" expanded="true" signature="827:1005" ph="Select genre... genre" />
           </folding>
         </state>
       </provider>

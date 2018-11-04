@@ -16,7 +16,7 @@ function sigNup($form, $data, $mysqli)
             $error[] = "Введите логин";
         if ($data["password1"] = '')
             $error[] = "Введите пароль";
-        if($data["password3"] != $data["password2"])
+        if ($data["password3"] != $data["password2"])
             $error[] = "пароли не совподают";
 
         $now = new Datetime();
@@ -71,27 +71,26 @@ function login($data, $mysqli)
 
         if ($data["login"] == '')
             $error[] = "Введите логин";
-        if($data["password2"] == '')
+        if ($data["password2"] == '')
             $error[] = "Введите пароль";
 
-        if(empty($error)) {
+        if (empty($error)) {
             $login = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($data["login"]))));
 
             $query = "Select password, is_client  from `client` where login = " . "\"" . $login . "\";";
             $object = mysqli_query($mysqli, $query);
             $arr = mysqli_fetch_all($object);
-			
+
             if (count($arr) == 0)
                 $error[] = "такого пользователя не существует";
             else if (!password_verify($data["password2"], $arr[0][0]))
                 $error[] = "такого пользователя не существует";
 
-            if (count($arr) != 0){
+            if (count($arr) != 0) {
                 $user[] = $login;
                 $user[] = $arr[0][1];
             }
-        }
-        else
+        } else
             return $error;
 
         if (empty($error)) {
@@ -102,7 +101,8 @@ function login($data, $mysqli)
     }
 }
 
-function getListOfCities($mysqli){
+function getListOfCities($mysqli)
+{
     $query = "Select name from `city`";
     $object = mysqli_query($mysqli, $query);
     $cities = mysqli_fetch_all($object);
@@ -115,7 +115,8 @@ function getListOfCities($mysqli){
     return $arrWithCities;
 }
 
-function getListOfGenres($mysqli){
+function getListOfGenres($mysqli)
+{
     $query = "Select name from `genre`";
     $object = mysqli_query($mysqli, $query);
     $genres = mysqli_fetch_all($object);
@@ -128,7 +129,9 @@ function getListOfGenres($mysqli){
     return $arrWithGenres;
 }
 
-class Film{
+class Film
+{
+    public $id;
     public $name;
     public $releaseDate;
     public $linkForImage;
@@ -136,8 +139,10 @@ class Film{
     public $genres = array();
 }
 
-function getListOfFilms($mysqli, $minValue, $NumberOfPage, $divider){
-    $min = $minValue + (($NumberOfPage-1) * $divider);
+
+function getListOfFilms($mysqli, $minValue, $NumberOfPage, $divider)
+{
+    $min = $minValue + (($NumberOfPage - 1) * $divider);
     $max = $min + $divider;
 
     $query = "Select id_film, name, release_date, image, description from `film` where id_film >= $min AND id_film < $max;";
@@ -145,7 +150,7 @@ function getListOfFilms($mysqli, $minValue, $NumberOfPage, $divider){
     $arr = mysqli_fetch_all($object);
     $films = array();
 
-    for ($i = 0; $i < count($arr); $i++){
+    for ($i = 0; $i < count($arr); $i++) {
         $film = new Film();
         $film->name = $arr[$i][1];
         $film->releaseDate = $arr[$i][2];
@@ -159,13 +164,78 @@ function getListOfFilms($mysqli, $minValue, $NumberOfPage, $divider){
         $object = mysqli_query($mysqli, $query);
         $arr2 = mysqli_fetch_all($object);
 
-        for($k = 0; $k < count($arr2); $k++)
+        for ($k = 0; $k < count($arr2); $k++)
             $film->genres[] = $arr2[$k][0];
 
         $films[] = $film;
     }
 
     return $films;
+}
+
+class Cinema
+{
+    public $id;
+    public $name;
+    public $address;
+    public $city;
+}
+
+class Hall
+{
+    public $id;
+    public $number;
+    public $countOfPlaces;
+}
+
+function GetIdOfCity($mysqli, $city)
+{
+    $query = "SELECT id_city FROM `city` WHERE name = \"$city\";";
+    $object = mysqli_query($mysqli, $query);
+    $arrInfoAboutCity = mysqli_fetch_all($object);
+    $id_city = $arrInfoAboutCity[0][0];
+    return $id_city;
+}
+
+function GetInfoAboutCinema($mysqli, $nameOfCinema, $id_city)
+{
+    $query = "SELECT * FROM `cinema` WHERE name = \"$nameOfCinema\" AND id_city = $id_city;";
+    $object = mysqli_query($mysqli, $query);
+    $arrInfoAboutCinema = mysqli_fetch_all($object);
+    return $arrInfoAboutCinema;
+}
+
+function GetInfoAboutHalls($mysqli, $id_cinema){
+    $query = "SELECT id_hall, number_of_hall, amount_of_place FROM `hall` WHERE id_cinema = $id_cinema";
+    $object = mysqli_query($mysqli, $query);
+    $arrInfoAboutHalls = mysqli_fetch_all($object);
+    return $arrInfoAboutHalls;
+}
+
+function SelectCinemasWithName($mysqli, $nameOfCinema, $nameOfCity, $link)
+{
+    $error = array();
+    if ($nameOfCinema == '')
+        $error[] = "введите название кинотеатра";
+    if ($nameOfCity == '')
+        $error[] = "Выберите город";
+
+    if (empty($error)) {
+        $nameOfCinema = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($nameOfCinema))));
+        $city = $nameOfCity;
+
+        $id_city = GetIdOfCity($mysqli, $city);
+        $arrInfoAboutCinema = GetInfoAboutCinema($mysqli, $nameOfCinema, $id_city);
+
+        if (count($arrInfoAboutCinema) != 0) {
+            $_SESSION["nameOfCinema"] = $nameOfCinema;
+            $_SESSION["nameOfCity"] = $city;
+            header("Location: $link");
+        } else {
+            $error[] = "такого кинотеатра в данном городе не существует";
+            return $error;
+        }
+    }
 }
 
 ?>
