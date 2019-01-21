@@ -9,7 +9,7 @@ if (isset($_SESSION["logged_user"]) && $_SESSION["logged_user"][1] == 0/*не к
     $user = $_SESSION["logged_user"];
     $message = '';
     $id_city = GetIdOfCity($mysqli, $_SESSION["nameOfCity"]);
-    $arrInfoAboutCinema = GetInfoAboutCinema($mysqli, $_SESSION["nameOfCinema"], $id_city);
+    $arrInfoAboutCinema = GetInfoAboutAllCinemas($mysqli);
 
     if (count($arrInfoAboutCinema) != 0) {
         $cinemas = array();

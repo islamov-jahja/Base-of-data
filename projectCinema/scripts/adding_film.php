@@ -27,7 +27,8 @@ if(isset($_SESSION["logged_user"]) && $_SESSION["logged_user"][1] == 0/*не к�
             $new_dir_file = "../templates/image/" . $_FILES["image"]["name"];
             move_uploaded_file($tmp_dir_file, $new_dir_file);
             if ($description != '')
-                $query = "INSERT INTO `film` VALUES (null, \"$dateOfRelease\", \"$nameOfFilm\", \"$description\", \"$new_dir_file\");";
+                $query = "INSERT INTO `film` 
+                          VALUES (null, \"$dateOfRelease\", \"$nameOfFilm\", \"$description\", \"$new_dir_file\");";
             else
                 $query = "INSERT INTO `film` VALUES (null, \"$dateOfRelease\", \"$nameOfFilm\", null, \"$new_dir_file\");";
             mysqli_query($mysqli, $query);

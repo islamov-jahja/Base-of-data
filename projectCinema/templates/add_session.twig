@@ -28,7 +28,7 @@
          </div>
          <div class="interests2">
             <div class="batton">
-               <p style="color: white">{{ login }}</p>
+                <p style="color: white">{{ login }}</p>
                <p>&nbsp;</p>
                <a href="exit_from_accaunt.php" class="button1">Выход</a>
             </div>
@@ -37,21 +37,32 @@
 
 
    <div  class="cover">
-    		<form action="deleting_film.php" id="contactform" method="post" enctype="multipart/form-data">
+    		<form id="contactform" action="add_session.php" method="post">
     			<p class="contact"><label for="name">Название фильма</label></p>
-
                 <select id="selectItem" name="selectFilm">
                     {% for film in films %}
                         <option id="select city">{{ film.id }} {{ film.name }} Дата релиза: {{ film.releaseDate }} </option>
                     {% endfor %}
                 </select>
+                <p class="contact"><label for="name">Название кинотеатра</label></p>
+                <select id="selectItem" name="selectCinema">
+                    {% for cinema in cinemas %}
+                        <option id="select city">{{ cinema.id }} {{ cinema.name }} Город: {{ cinema.city }} Адресс: {{ cinema.address }}</option>
+                    {% endfor %}
+                </select>
+                <p class="contact"><label for="name">Время начала сеанса</label></p>
+                <input id="name" name="dateTime" placeholder="начала сеанса" required="" tabindex="1" type="datetime-local">
+                <p class="contact"><label for="name">Возрастное ограничение</label></p>
+                <input id="name" name="ageLimit" placeholder="Возрастное ограничение" required="" tabindex="1" type="number">
+                <p class="contact"><label for="name">Цена</label></p>
+                <input id="name" name="price" placeholder="Цена" required="" tabindex="1" type="number">
 
-    			<input name="deleting_film" id="submit" tabindex="5" value="Удалить фильм" type="submit">
-                <br>
-                <a href="index.php" id="submit">На главное</a>
-                <p style="color:red">{{ error }}</p>
-                <p style="color:green">{{ message }}</p>
-    		</form> 
+
+    			<input name="to_add_session1" id="submit" tabindex="5" value="Далее" type="submit">
+    		</form>
+            <a href="index.php" id="submit">На главное</a>
+            <p style="color:green">{{ message }}</p>
+            <p style="color:red">{{ error }}</p>
      </div>       		 
          <div class="clear"></div>
          <div class="my_contact">

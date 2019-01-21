@@ -15,38 +15,48 @@
             <div class="clear"></div>
          </div>
          <div class="interests1">
-            <form action="searchInIndex.php" method="post">
-               <select id="selectItem" name="city">
-                   {% for city in cities %}
-                      <option id="select city">{{ city }}</option>
-                   {% endfor %}
-               </select>
-               <form class="interests1_search_form">
-                  <p><input type="search" name="nameOfFilm" placeholder="Поиск по сайту">
-                     <input type="submit" name="do_search" value="Найти">
-                  </p>
-               </form>
-            </form>
+            <select id="selectItem">
+                {% for city in cities %}
+                    <option id="select city">{{ city }}</option>
+                {% endfor %}
+            </select>
+            
+              <p><input type="search" name="q" placeholder="Поиск по сайту"> 
+                  <input type="submit" value="Найти">
+               </p>
+           
          </div>
          <div class="interests2">
             <div class="batton">
-               <p style="color: white">{{ login }}</p>
+                <p style="color: white">{{ login }}</p>
                <p>&nbsp;</p>
                <a href="exit_from_accaunt.php" class="button1">Выход</a>
             </div>
          </div>
          <div class="clear"></div>
-         <div class="add_container">
-            <ol class="rounded">
-               <li><a href="adding_cinema.php">&nbsp &nbsp Добавить кинотеатр</a></li>
-               <li><a href="delete_cinema_action.php">&nbsp &nbsp удалить кинотеатр</a></li>
-               <li><a href="add_hole_action.php">&nbsp &nbsp Добавить зал в кинотеатр</a></li>
-               <li><a href="delete_hall_action.php">&nbsp &nbsp удалить зал из кинотеатра</a></li>
-               <a href="index.php" id="submit" style="color: red">&nbsp &nbsp На главное</a>
-            </ol>
-         </div>
+
+
+   <div  class="cover">
+    		<form id="contactform" action="add_session_2.php" method="post">
+            <p class="contact"><label for="Subject">Кинотеатры</label></p>
+            <select id="selectItem" name="selectCinema">
+                {% for cinema in cinemas %}
+                    <option id="select city">{{ cinema.id }} {{ cinema.name }} Город: {{ cinema.city }} Адресс: {{ cinema.address }}</option>
+                {% endfor %}
+            </select>
+
+                <br></br>
+    			<input name="to_choose_cinema" id="submit" tabindex="5" value="Выбрать кинотеатр" type="submit">
+    		</form>
+            <a href="index.php" id="submit">На главное</a>
+            <p style="color:green">{{ message }}</p>
+            <p style="color:red">{{ error }}</p>
+     </div>       		 
          <div class="clear"></div>
          <div class="my_contact">
+		 <br></br>
+		 <br></br>
+		 <br></br>
             <h4>© 2018 "More tickets", Inc</h4>
             <a href=""><img class="contacts" src="../templates/image/vk.png" alt="vk"></a>
             <a href=""><img class="contacts" src="../templates/image/vi.jpg" alt="vi"></a>

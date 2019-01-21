@@ -2,22 +2,21 @@
 require_once ("../includes/db.inc.php");
 require_once ("../includes/functions.inc.php");
 require_once ("../includes/twig.inc.php");
-$template = $twig->loadTemplate("delete_hole_action.twig");
+$template = $twig->loadTemplate("add_session_2.twig");
 
 if (isset($_SESSION["logged_user"]) && $_SESSION["logged_user"][1] == 0/*не клиент*/) {
     $cities = getListOfCities($mysqli);
     $user = $_SESSION["logged_user"];
-
-    $id_city = GetIdOfCity($mysqli, $_SESSION["nameOfCity"]);
-    $arrInfoAboutCinema = GetInfoAboutAllCinemas($mysqli);
+    $id_city = $_SESSION["id_city"];
+    $arrInfoAboutCinema = GetInfoAboutCinema($mysqli, $_SESSION["nameOfCinema"], $id_city);
 
     if (count($arrInfoAboutCinema) != 0) {
         $cinemas = array();
         for ($i = 0; $i < count($arrInfoAboutCinema); $i++) {
             $cinema = new Cinema();
             $cinema->id = $arrInfoAboutCinema[$i][0];
-            $cinema->name = $arrInfoAboutCinema[$i][1];
-            $cinema->city = GetNameOfCity($mysqli, $arrInfoAboutCinema[$i][3]);
+            $cinema->name = $_SESSION["nameOfCinema"];
+            $cinema->city = $_SESSION["nameOfCity"];
             $cinema->address = $arrInfoAboutCinema[$i][2];
             $cinemas[] = $cinema;
         }
@@ -35,7 +34,7 @@ if (isset($_SESSION["logged_user"]) && $_SESSION["logged_user"][1] == 0/*не к
             $error[] = "В данном кинотеатре нет залов";
         else {
             $_SESSION["id_cinema"] = $id_cinema;
-            header("Location: delete_hall_final.php");
+            header("Location: add_session_3.php");
         }
     }
 

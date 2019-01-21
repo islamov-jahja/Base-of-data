@@ -77,7 +77,7 @@ function login($data, $mysqli)
         if (empty($error)) {
             $login = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($data["login"]))));
 
-            $query = "Select password, is_client  from `client` where login = " . "\"" . $login . "\";";
+            $query = "Select password, is_client, id_client, date_of_birth  from `client` where login = " . "\"" . $login . "\";";
             $object = mysqli_query($mysqli, $query);
             $arr = mysqli_fetch_all($object);
 
@@ -89,6 +89,8 @@ function login($data, $mysqli)
             if (count($arr) != 0) {
                 $user[] = $login;
                 $user[] = $arr[0][1];
+                $user[] = $arr[0][2];
+                $user[] = $arr[0][3];
             }
         } else
             return $error;
@@ -139,6 +141,21 @@ class Film
     public $genres = array();
 }
 
+class Session
+{
+    public $id;
+    public $filmName;
+    public $linkImage;
+    public $nameCinema;
+    public $startTime;
+    public $city;
+    public $addressCinema;
+    public $ageLimit;
+    public $price;
+    public $genresOfFilm;
+    public $description;
+    public $amountOfPlaces;
+}
 
 function getListOfFilms($mysqli, $minValue, $NumberOfPage, $divider)
 {
@@ -152,6 +169,7 @@ function getListOfFilms($mysqli, $minValue, $NumberOfPage, $divider)
 
     for ($i = 0; $i < count($arr); $i++) {
         $film = new Film();
+        $film->id = $arr[$i][0];
         $film->name = $arr[$i][1];
         $film->releaseDate = $arr[$i][2];
         $film->description = $arr[$i][4];
@@ -197,9 +215,31 @@ function GetIdOfCity($mysqli, $city)
     return $id_city;
 }
 
+function GetNameOfCity($mysqli, $id){
+    $query = "SELECT name FROM `city` WHERE id_city = $id;";
+    $object = mysqli_query($mysqli, $query);
+    $arrInfoAboutCity = mysqli_fetch_all($object);
+    $name = $arrInfoAboutCity[0][0];
+    return $name;
+}
+
 function GetInfoAboutCinema($mysqli, $nameOfCinema, $id_city)
 {
     $query = "SELECT * FROM `cinema` WHERE name = \"$nameOfCinema\" AND id_city = $id_city;";
+    $object = mysqli_query($mysqli, $query);
+    $arrInfoAboutCinema = mysqli_fetch_all($object);
+    return $arrInfoAboutCinema;
+}
+
+function GetAllFilms($mysqli){
+    $query = "SELECT id_film, release_date, name FROM project_cinema.film;";
+    $object = mysqli_query($mysqli, $query);
+    $arrInfoAboutFilms = mysqli_fetch_all($object);
+    return $arrInfoAboutFilms;
+}
+
+function GetInfoAboutAllCinemas($mysqli){
+    $query = "SELECT * FROM `cinema`;";
     $object = mysqli_query($mysqli, $query);
     $arrInfoAboutCinema = mysqli_fetch_all($object);
     return $arrInfoAboutCinema;

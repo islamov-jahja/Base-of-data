@@ -51,7 +51,7 @@
             <div class="film_blocks">
                 {% for film in films %}
                <div class="about_film">
-                  <h3><a href="results.php?name={{ film.name }}">{{ film.name }}</a></h3>
+                  <h3><a href="results.php?id={{ film.id }}">{{ film.name }}</a></h3>
                   <img class="film" src="{{ film.linkForImage }}" alt="Film1">
                   <p>
                      Год:{{ film.releaseDate }}

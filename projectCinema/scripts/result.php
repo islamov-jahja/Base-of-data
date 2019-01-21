@@ -7,7 +7,7 @@ $films = array();
 
 if(isset($_POST["do_search"]))
 {
-    $nameOfFilm = $_POST["nameOfFilm"];
+    $nameOfFilm = mysqli_real_escape_string($mysqli, htmlspecialchars(stripslashes(trim($_POST["nameOfFilm"]))));
     $query = "Select id_film, name, release_date, image, description from `film` where name like \"%$nameOfFilm%\";";
     $object = mysqli_query($mysqli, $query);
     $arr = mysqli_fetch_all($object);

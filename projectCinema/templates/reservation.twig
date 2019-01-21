@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../templates/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <title>Качественное кино</title>
+</head>
+<body>
+<div class="main_container">
+    <div class="name">
+        <h1 align="center">More tickets</h1>
+        <div class="clear"></div>
+    </div>
+    <div class="interests1">
+        <form action="result.php" method="post">
+            <select id="selectItem" name="city">
+                {% for city in cities %}
+                    <option id="select city">{{ city }}</option>
+                {% endfor %}
+            </select>
+            <form class="interests1_search_form">
+                <p><input type="search" name="nameOfFilm" placeholder="Поиск по сайту">
+                    <input type="submit" name="do_search" value="Найти">
+                </p>
+            </form>
+        </form>
+    </div>
+    <div class="interests2">
+        <div class="batton">
+            <p style="color: white">{{ login }}</p>
+            <p>&nbsp;</p>
+            <a href="exit_from_accaunt.php" class="button">Выход</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="film_container">
+        <form action="reservation.php" method="get">
+            <a href=""><img class="contacts" src="{{ session.linkImage }}" alt="vk"></a>
+            <p>Название фильма: {{ session.filmName }} </p>
+            <p>Название кинотеатра: {{ session.nameCinema }} </p>
+            <p>адрес кинотеатра: {{ session.addressCinema }} </p>
+            <p>Город: {{ session.city }} </p>
+            <p>Возрастное ограничение: {{ session.ageLimit }} </p>
+            <p>Цена: {{ session.price }} </p>
+            <p>Описание: {{ session.description }} </p>
+            <p>Жанры: {% for genre in session.genresOfFilm %} <p>{{ genre }}</p> {% endfor %}</p>
+            <br><br><br>
+            <input type="submit" name="to_buy" value={{ session.id }}>
+        </form>
+    </div>
+    <div class="my_contact">
+        <h4>© 2018 "More tickets", Inc</h4>
+        <a href=""><img class="contacts" src="../templates/image/vk.png" alt="vk"></a>
+        <a href=""><img class="contacts" src="../templates/image/vi.jpg" alt="vi"></a>
+        <a href=""><img class="contacts" src="../templates/image/inst.jpg" alt="inst"></a>
+    </div>
+    <div class="clear"></div>
+</div>
+</div>
+</body>
+</html>

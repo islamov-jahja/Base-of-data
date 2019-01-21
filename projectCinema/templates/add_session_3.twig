@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="../templates/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy" rel="stylesheet">
+    <title>Сinema site</title>
+</head>
+<body>
+<div class="main_container">
+    <div class="name">
+        <h1 align="center">More tickets</h1>
+        <div class="clear"></div>
+    </div>
+    <div class="interests1">
+        <select id="selectItem">
+            {% for city in cities %}
+                <option id="select city">{{ city }}</option>
+            {% endfor %}
+        </select>
+
+        <p><input type="search" name="q" placeholder="Поиск по сайту">
+            <input type="submit" value="Найти">
+        </p>
+
+    </div>
+    <div class="interests2">
+        <div class="batton">
+            <p style="color: white">{{ login }}</p>
+            <p>&nbsp;</p>
+            <a href="exit_from_accaunt.php" class="button1">Выход</a>
+        </div>
+    </div>
+    <div class="clear"></div>
+
+
+    <div  class="cover">
+        <form id="contactform" action="add_session_3.php" method="post">
+            <p class="contact"><label for="Subject">Залы</label></p>
+            <select id="selectItem" name="selectHall">
+                {% for hall in halls %}
+                    <option id="select city">{{ hall.id }} Номер зала: {{ hall.number }} Количество места {{ hall.countOfPlaces }}</option>
+                {% endfor %}
+            </select>
+
+            <br></br>
+            <input name="to_delete_hall" id="submit" tabindex="5" value="добавить сессию" type="submit">
+        </form>
+        <a href="index.php" id="submit">На главное</a>
+        <p style="color:green">{{ message }}</p>
+        <p style="color:red">{{ error }}</p>
+    </div>
+    <div class="clear"></div>
+    <div class="my_contact">
+        <br></br>
+        <br></br>
+        <br></br>
+        <h4>© 2018 "More tickets", Inc</h4>
+        <a href=""><img class="contacts" src="../templates/image/vk.png" alt="vk"></a>
+        <a href=""><img class="contacts" src="../templates/image/vi.jpg" alt="vi"></a>
+        <a href=""><img class="contacts" src="../templates/image/inst.jpg" alt="inst"></a>
+    </div>
+    <div class="clear"></div>
+</div>
+</body>
+</html>
